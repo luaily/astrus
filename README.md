@@ -10,7 +10,7 @@ for the Astrus platform. This repository may be relocated to [@luailyprod/astrus
 ### **WHITEPAPER LOCATED AT `/WHITEPAPER/Astrus-Whitepaper-YYYY_MM.pdf`**
 
 ## Basic Astrus Components
-1. **Nodes** [N/S] (Matrix Equivalent: Homeservers)
+### 1. **Nodes** [N/S] (Matrix Equivalent: Homeservers)
    - Documentation: `/nodes/regular-mode/...` | `/nodes/isolated/...`
    - These are the instances which host user data, chat groups, and hold mailboxes. They  
      are built to power the required functions of the ecosystem, so that it can continue to  
@@ -34,13 +34,13 @@ for the Astrus platform. This repository may be relocated to [@luailyprod/astrus
        Net-addressing: static IPv4 or IPv6 reccomended OR domain + proxy.
        Intranet-support: in Isolation mode ONLY.
        ``` 
-2. **Proxies** [N/P]
+### 2. **Proxies** [N/P]
    - Documentation: `/nodes/proxy-mode/...`
-   - Proxy servers usually run identical serverware to Nodes, however they do not host chat
-     groups or hold user data, they cannot be used with Isolated nodes without extended setup.
-   - Astrus reccomends those who want to host Nodes to use **Astrus-Satellite**.
-     Astrus-Satellite contains the API and presets for proxy support. Mailboxes still run on
-     this configuration and discovery still runs when Isolated mode is off.
+   - Proxy servers usually run identical serverware to Nodes, however they do not host chat  
+     groups or hold user data, they cannot be used with Isolated nodes without extended setup.  
+   - Astrus reccomends those who want to host Nodes to use **Astrus-Satellite**.  
+     Astrus-Satellite contains the API and presets for proxy support. Mailboxes still run on  
+     this configuration and discovery still runs when Isolated mode is off.  
      - Reccomended Specs:
        ```
        CPU: any x86_64 CPU or ARM64 v8 made in the last 12 years with a base speed of 1.60 GHz+
@@ -56,19 +56,20 @@ for the Astrus platform. This repository may be relocated to [@luailyprod/astrus
        Net-addressing: static IPv4 or IPv6 reccomended OR domain + proxy.
        Intranet-support: in Isolation mode ONLY with additional setup.
        ```
-3. **Clients** [C/x]
+### 3. **Clients** [C/x]
    - Documentation: `/clients/<type>/...` TYPES: `WEB [C/W]`, `TUI [C/T]`, `DESKTOP [C/D]`, `MOBILE [C/A] & [C/i]`, `UNCONVENTIONAL [C/U]`
-   - Clients are the way end-users will interact with the ecosystem, these can come in many forms
-     including, but not limited to, Desktop Clients, Web-Based Clients, Mobile Phone Apps, etc.  
-   - Clients are only intended for human users. For building Bots or systems that work with the API  
-     see APIs below.
-   - Astrus provides a simple Python-based **tui** desktop client named **Astrus-STARship**.  
-     This runs on any system that has a terminal UI and has Python 3.11 - 3.13 installed.
+   - Clients are the way end-users will interact with the ecosystem, these can come in many forms  
+     including, but not limited to, Desktop Clients, Web-Based Clients, Mobile Phone Apps, etc.    
+   - Clients are only intended for human users. For building Bots or systems that work with the API   
+     see APIs below.  
+   - Astrus provides a simple Python-based **tui** desktop client named **Astrus-STARship**.   
+     This runs on any system that has a terminal UI and has Python 3.11 - 3.13 installed.  
    - Astrus also provides a basic **web**-based client named **Astrus-SPACEship**.  
      CHROMIUM: any system with at least 2GB of RAM and a chromium-based brower version 121 or higher.  
-     FIREFOX: any system with at least 1.5GB of RAM and a firefox-based browser version 122 or higher.
-   - ASTRUS AT THE MOMENT DOES NOT PROVIDE ANY DESKTOP OR MOBILE CLIENTS. THEY WILL BE ROLLED OUT LATER ON!
-4. **API Routers** [A/x]
+     FIREFOX: any system with at least 1.5GB of RAM and a firefox-based browser version 122 or higher.  
+   - ASTRUS AT THE MOMENT DOES NOT PROVIDE ANY DESKTOP OR MOBILE CLIENTS.  
+     WE PREFER COMMUNITY DEVELOPED MOBILE & DESKTOP APPS.  
+### 4. **API Routers** [A/x]
    - Documentation: `/API/ROUTERS/...` 
    - API documentation: `/API/<type>/...` TYPES: `ROUTERS [A/R]`, `WEBHOOKS [A/W]`, `APPLICATIONS [A/A]`, `DISCOVERY [A/D]`
    - API routers are similar to proxies but only meant for application interactions or webhooks,
@@ -109,8 +110,11 @@ All software related to the Astrus Project MUST be licensed under a Share-Alike 
 ---------
 ### Credits
 
-Developer(s): [@luaily](https://github.com/luaily)
-Licensing/Distribution: [Luaily Productions (@luailyprod)](https://github.com/luailyprod)
+* Developer(s): 
+   * (incompetent) Lead Dev: [@luaily](https://github.com/luaily)  
+* Licensing/Distribution:  
+   * Release & Release Candidate Builds: [Luaily Productions (@luailyprod)](https://github.com/luailyprod)  
+   * Pre-release Builds: [Socks Softworks](https://https://github.com/luailyprod) a subsidiary of Luaily Productions
 
 Last Updated: `April 28th 2026`
 
